@@ -13,7 +13,7 @@ function testItCanProvideSecondPlayersName () {
 }
 
 function testItCanGetScoreForAPlayer () {
-	standings=$'John - Michael\nJohn\nMichael\nJohn'
+	standings=$'John\nMichael\nJohn'
 	assertEquals '2' `getScoreFor 'John' "$standings"`
 }
 
